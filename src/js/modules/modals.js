@@ -49,6 +49,7 @@ const modals = () => {
   );
 
   bindModal(".phone_link", ".popup", ".popup_content .popup_close");
+  bindModal(".popup_calc_btn", ".popup_calc", ".popup_calc_close");
 
   //showModalByTime(".popup", 60000);
 };
