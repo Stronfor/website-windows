@@ -3,18 +3,18 @@ const forms = () => {
     inputs = document.querySelectorAll("input"),
     phoneInputs = document.querySelectorAll('input[name="user_phone"]');
 
-  const message = {
-    loading: "Loading",
-    success: "thank you, we will contact you soon",
-    failure: "Error...",
-  };
-
   //check number
   phoneInputs.forEach((item) => {
     item.addEventListener("input", () => {
       item.value = item.value.replace(/\D/, "");
     });
   });
+
+  const message = {
+    loading: "Loading",
+    success: "thank you, we will contact you soon",
+    failure: "Error...",
+  };
 
   // POST Data for server
   const postData = async (url, data) => {

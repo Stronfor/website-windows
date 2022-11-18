@@ -8,6 +8,8 @@ import forms from "./modules/forms";
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
+  "use strict";
+
   modals();
   tabs(".glazing_slider", ".glazing_block", ".glazing_content", "active");
   tabs(
